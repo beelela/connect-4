@@ -41,7 +41,7 @@ public class Connect4
         boolean placed = false;
         int r=arr.length-1;
         while(!placed&&r>=0) {
-            if(arr[r][c]==(char)11034) {
+            if(arr[r][c]=='_') {
                 arr[r][c] = player;
                 placed = true;
             }
@@ -53,9 +53,9 @@ public class Connect4
         for(int i=0; i<arr.length; i++) {
             for(int j=0; j<arr.length; j++) {
                 char letter = ' ';
-                if(arr[i][j]=='R') letter = (char)11035;
-                else if(arr[i][j]=='Y') letter = (char)11036;
-                else letter = (char)11034;
+                if(arr[i][j]=='R') letter = '@';
+                else if(arr[i][j]=='Y') letter = 'O';
+                else letter = '_';
                 System.out.printf("%-2c", letter);
             }
             System.out.println();
@@ -65,7 +65,7 @@ public class Connect4
     public static void prepBoard (char[][] arr) {
         for(int i=0; i<arr.length; i++) {
             for(int j=0; j<arr.length; j++) {
-                arr[i][j] = (char)11034;
+                arr[i][j] = '_';
             }
         }
     }
