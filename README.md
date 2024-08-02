@@ -1,17 +1,5 @@
-# Big header
-## medium header
-### smol header
+# Connect 4
+A fun game of connect-4 with players R (player 1) and Y (player 2). R is '@' and Y is 'O'.
 
-### This is a list
-* Hi
-* Bye
-
-just some regular text
-
-```
-this is a block
-of
-code
-```
-
-im about to do something silly
+### Run in terminal
+```java connect4```
