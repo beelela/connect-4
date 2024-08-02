@@ -83,7 +83,7 @@ public class Connect4
         while(!winner(board)) {
             if(turn%2==0) {
                 System.out.print("Player R's turn. Player R chooses column ");
-                column = kb.nextInt();
+                column = kb.nextInt()-1;
                 while(column<0||column>6) {
                     System.out.println("Column "+column+" is not valid. Please choose a differnt column.");
                     column = kb.nextInt();
@@ -92,7 +92,7 @@ public class Connect4
             }
             else {
                 System.out.print("Player Y's turn. Player Y chooses column ");
-                column = kb.nextInt();
+                column = kb.nextInt()-1;
                 while(column<0||column>6) {
                     System.out.println("Column "+column+" is not valid. Please choose a differnt column.");
                     column = kb.nextInt();
