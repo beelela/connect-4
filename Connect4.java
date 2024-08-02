@@ -1,4 +1,4 @@
-//Bela Gupta
+//Beelela Gupta
 //May 19, 2022
 //Creating a connect 4 game using arrays and loops
 
